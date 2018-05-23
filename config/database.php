@@ -58,7 +58,7 @@ return [
             'port' => '3306',
             'database' => 'world',
             'username' => 'root',
-            'password' => '',
+            'password' => 'B0ttleC0ffeePh0n3',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
