@@ -14,9 +14,9 @@
                     <tr>
                         <th>Position</th>
                         <th>Name</th>
+                        <th>Points</th>
                         <th>CS</th>
                         <th>CR</th>
-                        <th>Points</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,9 +24,9 @@
                     <tr class="info">
                     	<td>{{ $user->position }}</td>
                         <td><a href="/user_predictions/{{ $user->id }}"> {{ $user->name }}</a></td>
+                        <td>{{ $user->points }}</td>
                         <td>{{ $user->cs }}</td>
                         <td>{{ $user->cr }}</td>
-                        <td>{{ $user->points }}</td>
                     </tr>
                 @endforeach
                 </tbody>
