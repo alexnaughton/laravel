@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'localhost',
+            'host' => 206.189.181.85,
             'port' => '3306',
             'database' => 'world',
-            'username' => 'root',
+            'username' => 'forge',
             'password' => 'B0ttleC0ffeePh0n3',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
