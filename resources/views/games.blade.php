@@ -12,7 +12,6 @@
             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                 <thead>
                     <tr>
-                        <th>Date</th>
                         <th>Home Team</th>
                         <th>Home Score</th>
                         <th>Away Score</th>
@@ -23,7 +22,6 @@
                 <tbody>
                 @foreach($games as $game)
                     <tr class="info">
-                        <td>{{ $game->date }}</td>
                         <td>{{ $game->home_team }}</td>
                         <td>{{ $game->home_score }}</td>
                         <td>{{ $game->away_score }}</td>
