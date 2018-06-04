@@ -69,7 +69,7 @@ class AdminController extends Controller
 	public function games (Request $request)
 	{
 
-		$games = Game::all();
+		$games = Game::orderBy('id')->get();
 
 		return view('games', compact('games'));
 
