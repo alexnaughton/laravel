@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-    <title> My Predictions </title>
+    <title> User Predictions </title>
 @stop
 
 @section('content')

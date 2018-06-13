@@ -50,7 +50,7 @@ class HomeController extends Controller
 
 	}
 
-	/*public function update_predictions (Request $request)
+	public function update_predictions (Request $request)
 	{
 
 		if($request->session()->get('username')) 
@@ -81,7 +81,7 @@ class HomeController extends Controller
 		else
 			return redirect('/');
 
-	}*/
+	}
 
 	public function user_predictions (Request $request, $user_id)
 	{
