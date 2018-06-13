@@ -21,7 +21,7 @@ Route::get('logout', 'LoginController@logout');
 //Home
 Route::get('home', 'HomeController@index');
 Route::get('my_predictions', 'HomeController@my_predictions');
-Route::post('update_predictions', 'HomeController@update_predictions');
+//Route::post('update_predictions', 'HomeController@update_predictions');
 Route::get('user_predictions/{user_id}', 'HomeController@user_predictions');
 
 //Admin
