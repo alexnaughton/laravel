@@ -13,7 +13,7 @@
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li> <a href="/home"> <i class="fa fa-home fa-fw"></i> Home </a> </li>
-                <li> <a href="/my_predictions"> <i class="fa fa-star fa-fw"></i> My Predictions </a> </li>
+                
                 <li> <a href="/logout"> <i class="fa fa-sign-out fa-fw"></i> Logout </a> </li>
             </ul>
         </div>
