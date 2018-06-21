@@ -19,7 +19,7 @@
                 <tbody>
                 @foreach($predictions as $prediction)
                     <tr class="info">
-                        <td>Sample</td>
+                        <td>{{ $prediction->user->name }}</td>
                         <td>{{ $prediction->home_score." - ".$prediction->away_score}}</td>
                     </tr>
                 @endforeach
