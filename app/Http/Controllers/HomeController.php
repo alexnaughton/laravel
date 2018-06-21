@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Prediction;
+use App\Game;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
