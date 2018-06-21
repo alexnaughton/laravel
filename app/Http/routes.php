@@ -23,6 +23,8 @@ Route::get('home', 'HomeController@index');
 Route::get('my_predictions', 'HomeController@my_predictions');
 Route::post('update_predictions', 'HomeController@update_predictions');
 Route::get('user_predictions/{user_id}', 'HomeController@user_predictions');
+Route::get('games', 'HomeController@games');
+Route::get('game_predictions/{game_id}', 'HomeController@game_predictions');
 
 //Admin
 Route::get('yz9slf', 'AdminController@add_user');

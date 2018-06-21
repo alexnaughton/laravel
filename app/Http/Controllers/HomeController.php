@@ -99,4 +99,35 @@ class HomeController extends Controller
 
 	}
 
+	public function games (Request $request)
+	{
+		if($request->session()->get('username')) 
+		{
+
+			$games = Game::where('result', "Pending")->get();
+
+			return view('games_user', compact('games'));
+
+		}
+		else
+			return redirect('/');
+
+	}
+
+	public function game_predictions (Request $request, $game_id)
+	{
+
+		if($request->session()->get('username')) 
+		{
+
+			$predictions = Prediction::with('user')->where('game_id', $game_id)->get();
+
+			return view('games_predictions', compact('predictions'));
+
+		}
+		else
+			return redirect('/');
+
+	}
+
 }
