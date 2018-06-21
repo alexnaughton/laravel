@@ -32,6 +32,7 @@
     $(document).ready(function() {
         $('#dataTables-example').DataTable({
             responsive: true
+            "pageLength": 20
         });
     });
     </script>
