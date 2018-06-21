@@ -123,7 +123,7 @@ class HomeController extends Controller
 
 			$predictions = Prediction::with('user')->where('game_id', $game_id)->get();
 
-			return view('games_predictions', compact('predictions'));
+			return view('game_predictions', compact('predictions'));
 
 		}
 		else
