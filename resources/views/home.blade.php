@@ -21,7 +21,11 @@
                 </thead>
                 <tbody>
                 @foreach($users as $user)
+                    @if($user->position == 1)
+                    <tr class="success">
+                    @else
                     <tr class="info">
+                    @endif
                     	<td>{{ $user->position }}</td>
                         <td><a href="/user_predictions/{{ $user->id }}"> {{ $user->name }}</a></td>
                         <td>{{ $user->points }}</td>

@@ -18,7 +18,12 @@
                 </thead>
                 <tbody>
                 @foreach($predictions as $prediction)
+                    @if($prediction->home_score > $prediction->away_score)
                     <tr class="info">
+                    @elseif($prediction->home_score == $prediction->away_score)
+                    <tr class="danger">
+                    @else
+                    <tr class="success">
                         <td>{{ $prediction->user->name }}</td>
                         <td>{{ $prediction->home_score." - ".$prediction->away_score}}</td>
                     </tr>
