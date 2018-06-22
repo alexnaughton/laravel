@@ -20,10 +20,11 @@
                 @foreach($predictions as $prediction)
                     @if($prediction->home_score > $prediction->away_score)
                     <tr class="info">
-                    @elseif($prediction->home_score == $prediction->away_score)
+                    @elseif($prediction->away_score == $prediction->home_score)
                     <tr class="danger">
                     @else
                     <tr class="success">
+                    @endif
                         <td>{{ $prediction->user->name }}</td>
                         <td>{{ $prediction->home_score." - ".$prediction->away_score}}</td>
                     </tr>
