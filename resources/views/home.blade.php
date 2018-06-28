@@ -21,7 +21,7 @@
                 </thead>
                 <tbody>
                 @foreach($users as $user)
-                    @if($user->position == 1 && $games = 0)
+                    @if($user->position == 1 && $games == 0)
                     <tr class="warning">
                     <td>C</td>
                     @elseif($user->position == 1 && $games > 0)
