@@ -28,6 +28,7 @@
                     <tr class="info">
                     <td>{{ $user->position }}</td>
                     @else
+                    <tr class="info">
                     <td>{{ $user->position }}</td>
                     @endif
                         <td><a href="/user_predictions/{{ $user->id }}"> {{ $user->name }}</a></td>
