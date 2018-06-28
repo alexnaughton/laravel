@@ -19,7 +19,7 @@ class HomeController extends Controller
 
 			$games = Game::where('result', "Pending")->count();
 
-			$games = 2;
+			$games = 0;
 
 			$users = User::orderBy('points', 'DESC')->get();
 
