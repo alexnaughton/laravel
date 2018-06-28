@@ -22,7 +22,7 @@
                 <tbody>
                 @foreach($users as $user)
                     @if($user->position == 1)
-                    <tr class="warning">
+                    <tr class="success">
                     <td>{{ $user->position }}</td>
                     @else
                     <tr class="info">
