@@ -21,15 +21,14 @@
                 </thead>
                 <tbody>
                 @foreach($users as $user)
-                    @if($user->position == 1)
+                    @if($user->position == 1 && $games = 0)
                     <tr class="success">
-                    @else
+                    <td>C</td>
+                    @elseif($user->position == 1 && $games > 0)
                     <tr class="info">
-                    @endif
-                    @if($games = 0)
-                    	<td>C</td>
+                    <td>{{ $user->position }}</td>
                     @else
-                        <td>{{ $user->position }}</td>
+                    <td>{{ $user->position }}</td>
                     @endif
                         <td><a href="/user_predictions/{{ $user->id }}"> {{ $user->name }}</a></td>
                         <td>{{ $user->points }}</td>
