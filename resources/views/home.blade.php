@@ -26,7 +26,7 @@
                     @else
                     <tr class="info">
                     @endif
-                    @if($games = 2)
+                    @if($games = 0)
                     	<td>C</td>
                     @else
                         <td>{{ $user->position }}</td>
