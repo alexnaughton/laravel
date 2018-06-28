@@ -17,6 +17,8 @@ class HomeController extends Controller
 		if($request->session()->get('username')) 
 		{
 
+			$games = Game::where('result', "Pending")->count();
+
 			$users = User::orderBy('points', 'DESC')->get();
 
 			$position = 1;
@@ -27,7 +29,7 @@ class HomeController extends Controller
 				$position += 1;
 			}			
 
-		    return view('home', compact('users'));
+		    return view('home', compact('users', 'games'));
 
 		}
 		else

@@ -26,7 +26,11 @@
                     @else
                     <tr class="info">
                     @endif
-                    	<td>{{ $user->position }}</td>
+                    @if($games = 0)
+                    	<td>C</td>
+                    @else
+                        <td>{{ $user->position }}</td>
+                    @endif
                         <td><a href="/user_predictions/{{ $user->id }}"> {{ $user->name }}</a></td>
                         <td>{{ $user->points }}</td>
                         <td>{{ $user->cs }}</td>
